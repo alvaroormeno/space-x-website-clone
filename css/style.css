@@ -212,8 +212,30 @@ section {
   animation: fadeBounce 5s infinite
 }
 
+/* FOOTER SECTION */
+footer {
+  position: relative;
+  padding: 55px 0;
+}
 
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
+footer ul li {
+  margin-right: 30px;
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 2.5;
+}
+
+footer ul li a:hover {
+  color: #aaa;
+}
 
 
 
