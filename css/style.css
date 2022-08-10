@@ -184,6 +184,20 @@ section {
   transform: translate(0);
 }
 
+/* scroll down arrow */
+.scroll-arrow {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  /* with left 50% the beggining of arrow starts in the middle, to position in exact middle.. */
+  transform: translateX(-50%);
+}
+
+
+
+
+
+
 /* ANIMATIONS */
 
 /* keyframe named fadeInUp */
