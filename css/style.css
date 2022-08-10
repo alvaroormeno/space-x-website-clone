@@ -80,7 +80,7 @@ ul {
   /* scalex(0) makes it dissapear */
   transform: scaleX(0);
   /* transition on the transform animates it to start from middle */
-  transition: transform 0.06s cubic-bezier(0.19,1,0.22,1);
+  transition: transform 0.6s cubic-bezier(0.19,1,0.22,1);
   transform-origin: right center;
 }
 
@@ -90,4 +90,82 @@ ul {
   /* change direction from where animation starts */
   transform-origin: left center;
   transition-duration: 0.4s;
+}
+
+/* All SECTIONS */
+section {
+  /* pos. relative because the inner section will be absolute */
+  position: relative;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+/* ALL INNER SECTIONS */
+.section-inner {
+  position: absolute;
+  bottom: 200px;
+  left: 150px;
+  max-width: 560px;
+}
+
+/* ALL INNER SECTION h4 Titles */
+.section-inner h4{
+  font-size: 22px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+/* ALL INNER SECTION h2 Titles */
+.section-inner h2{
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* ALL BACKGROUND IMAGES */
+.section-a {
+  background-image: url('../img/section-a.webp');
+}
+
+/* ALL BUTTONS BTN CONTAINERS */
+.btn {
+  /* pos. relative because background fill animation is actually a div behind button with pos. absolute */
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  min-width: 130px;
+  padding: 15px 50px;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  text-transform: uppercase ;
+  font-weight: bold;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* ON HOVER BUTTON Container */
+.btn:hover span {
+  color: #000;
+}
+
+/* Button Container hover element behind it */
+.btn .hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: -1;
+  /* pushes down white box 100% on y axis, cant see because BTN container has no overflow */
+  transform: translateY(100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn:hover .hover {
+  transform: translate(0);
 }
