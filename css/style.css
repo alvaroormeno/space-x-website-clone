@@ -269,6 +269,20 @@ footer ul li a:hover {
   transform: translateY(10px);
 }
 
+/* TRANSITION HAMBURGER TO X WHEN OPEN */
+.open {
+  transform: rotate(90deg);
+}
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.open .hamburger-middle {
+  display: none;
+}
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
 
 /* ANIMATIONS */
 
