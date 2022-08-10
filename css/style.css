@@ -191,6 +191,8 @@ section {
   left: 50%;
   /* with left 50% the beggining of arrow starts in the middle, to position in exact middle.. */
   transform: translateX(-50%);
+  /* add animation keyframe, infinite animation every 5 seconds */
+  animation: fadeBounce 5s infinite
 }
 
 
@@ -210,6 +212,25 @@ section {
   /* end */
   100% {
     opacity: 1;
-    transform: translatey(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeBounce {
+  /* start */
+  0%,
+  20%,
+  50%,
+  80%,
+  /* end */
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  /* then at 40%.. */
+  40% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
