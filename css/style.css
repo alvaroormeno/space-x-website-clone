@@ -116,6 +116,8 @@ section {
   font-size: 22px;
   margin-bottom: 5px;
   font-weight: 400;
+  /* add animation keyframe */
+  animation: fadeInUp 0.5s ease-in-out;
 }
 
 /* ALL INNER SECTION h2 Titles */
@@ -123,6 +125,18 @@ section {
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 20px;
+  /* add animation keyframe w/ .2s delay so h4 is faster  */
+  animation: fadeInUp 0.5s ease-in-out 0.2s;
+  /* stop from showing at start */
+  animation-fill-mode: both;
+}
+
+/* a element inside section-inner */
+.section-inner a {
+  /* add animation keyframe w/ .2s delay so h2 is faster  */
+  animation: fadeInUp 0.5s ease-in-out 0.4s;
+  /* stop from showing at start */
+  animation-fill-mode: both;
 }
 
 /* ALL BACKGROUND IMAGES */
@@ -168,4 +182,20 @@ section {
 
 .btn:hover .hover {
   transform: translate(0);
+}
+
+/* ANIMATIONS */
+
+/* keyframe named fadeInUp */
+@keyframes fadeInUp {
+  /* start */
+  0% {
+    opacity: 0;
+    transform: translateY(140px);
+  }
+  /* end */
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
 }
