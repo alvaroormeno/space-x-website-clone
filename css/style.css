@@ -237,6 +237,37 @@ footer ul li a:hover {
   color: #aaa;
 }
 
+/* HAMBURGER MENU FOR MOBILE */
+.hamburger {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  z-index: 10;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+}
+
+.hamburger-top, .hamburger-middle, .hamburger-bottom {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+/* move middle line down */
+.hamburger-middle {
+  transform: translateY(5px);
+}
+
+/* move bottom line down under middle line*/
+.hamburger-bottom {
+  transform: translateY(10px);
+}
 
 
 /* ANIMATIONS */
