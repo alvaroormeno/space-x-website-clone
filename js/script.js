@@ -2,8 +2,13 @@ const btn = document.getElementById('menu-btn');
 const overlay = document.getElementById('overlay');
 const menu = document.getElementById('mobile-menu')
 const counters = document.querySelectorAll('.counter')
+// like a state in react to be used in component
+let scrollStarted = false;
 
 btn.addEventListener('click', navToggle);
+// listen to scroll page for counter start
+document.addEventListener('scroll', scrollPage);
+
 
 function navToggle() {
   btn.classList.toggle('open');
@@ -11,6 +16,22 @@ function navToggle() {
   // remove scrolling when hamburger click
   document.body.classList.toggle('stop-scrolling')
   menu.classList.toggle('show-menu')
+}
+
+function scrollPage() {
+  // window.scrollY gives the value of the scroll position of y axis
+  const scrollPosition = window.scrollY
+  console.log(scrollPosition)
+
+  if(scrollPosition > 100 && !scrollStarted) {
+    // call function to start number count
+    countUp()
+    scrollStarted = true
+    // if we scroll up from counters and scrollStarted is true, reset counters to 0
+  } else if (scrollPosition < 100 && scrollStarted) {
+    reset()
+    scrollStarted = false
+  }
 }
 
 function countUp(){
@@ -34,13 +55,18 @@ function countUp(){
         
         // calls again updateCounter function every 75 miliseconds only until c < target
         setTimeout(updateCounter, 75);
-      } 
+      } else {
+        counter.innerText = target
+      }
       
     }
-
     updateCounter()
   });
 }
 
-countUp()
+function reset() {
+  counters.forEach((counter) => counter.innerHTML = '0')
+}
+
+
 
