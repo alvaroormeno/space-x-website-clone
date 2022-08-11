@@ -257,6 +257,7 @@ footer ul li a:hover {
   top: 0;
   left: 0;
   background-color: #fff;
+  transition: all 0.5s;
 }
 
 /* move middle line down */
