@@ -353,6 +353,24 @@ footer ul li a:hover {
   transition: color 0.6s;
 }
 
+/* FALCON 9 PAGE! */
+.bg-falcon-9 {
+  background-image: url('../img/falcon-9.webp');
+}
+
+.section-animate {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.section-inner-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
 
 /* ANIMATIONS */
 
@@ -386,6 +404,17 @@ footer ul li a:hover {
   40% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  /* start */
+  0% {
+    opacity: 0;
+  }
+  /* end */
+  100% {
+    opacity: 1;
   }
 }
 
