@@ -296,6 +296,11 @@ footer ul li a:hover {
 
 }
 
+/* STOP SCROLLING WHEN CLICK HAMBURGER */
+.stop-scrolling {
+  overflow: hidden;
+}
+
 
 /* ANIMATIONS */
 
