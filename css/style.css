@@ -306,6 +306,53 @@ footer ul li a:hover {
   display: none;
 }
 
+/* MOBILE MENU */
+.mobile-main-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background: #000;
+  z-index: 4;
+  /* for items to appear in middle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* have it hidden to the left of screen */
+  transform: translateX(100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* BRING MENU FROM RIGHT */
+.show-menu {
+  transform: translateX(0);
+}
+
+.mobile-main-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  padding: 50px;
+  width: 100%;
+}
+
+.mobile-main-menu ul li {
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px #555 dotted;
+  width: 100%;
+  text-align: right;
+  padding-bottom: 8px;
+}
+
+.mobile-main-menu ul li:hover {
+  color: #fff;
+  transition: color 0.6s;
+}
+
 
 /* ANIMATIONS */
 
