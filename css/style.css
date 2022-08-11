@@ -301,6 +301,11 @@ footer ul li a:hover {
   overflow: hidden;
 }
 
+/* HIDE MOBILE MAIN MENU ITEMS */
+.mobile-only {
+  display: none;
+}
+
 
 /* ANIMATIONS */
 
@@ -345,6 +350,11 @@ footer ul li a:hover {
   .desktop-main-menu {
     display: none;
   } 
+
+  /* Show main mobile menu items */
+  .mobile-only {
+    display: block;
+  }
   
 }
 
