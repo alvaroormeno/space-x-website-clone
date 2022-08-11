@@ -367,8 +367,22 @@ footer ul li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
 }
 
+.section-inner-center h3 {
+  font-size: 100px;
+  margin-bottom: 15px;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+.section-inner-center p {
+  font-size: 20px;
+  /* adding 0.2s delay at the end so it comes after h3 */
+  animation: fadeInUp 0.5s ease-in-out 0.2s;
+  animation-fill-mode: both;
+}
 
 
 
