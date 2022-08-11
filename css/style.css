@@ -354,6 +354,8 @@ footer ul li a:hover {
 }
 
 /* FALCON 9 PAGE! */
+/* FALCON 9 PAGE! */
+/* FALCON 9 PAGE! */
 .bg-falcon-9 {
   background-image: url('../img/falcon-9.webp');
 }
@@ -369,6 +371,7 @@ footer ul li a:hover {
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   text-align: center;
+  width: 80%;
 }
 
 .section-inner-center h3 {
@@ -402,6 +405,20 @@ footer ul li a:hover {
 .stats div h4 {
   font-size: 24px;
   font-weight: 300;
+}
+
+/* FALCON HEAVY PAGE! */
+/* FALCON HEAVY PAGE! */
+/* FALCON HEAVY PAGE! */
+.bg-falcon-heavy {
+  background-image: url('../img/falcon-heavy.webp');
+}
+
+
+
+/* DRAGON PAGE! */
+.bg-dragon {
+  background-image: url('../img/dragon.webp');
 }
 
 
@@ -505,9 +522,7 @@ footer ul li a:hover {
 
   /* FALCON 9 PAGE! */
   /* FALCON 9 PAGE! */
-  .section-inner-center {
-    width: 80%;
-  }
+
 
   .section-inner-center h3 {
     font-size: 50px;
